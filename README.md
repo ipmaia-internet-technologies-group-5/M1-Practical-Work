@@ -9,8 +9,8 @@ An example report using markdown on Github. This documentation is writen using [
 ## Repository organization
 
 _Please help reader navigate around describing how the repository is organized by providing links_
-* **Source code** is in the [src folder](https://github.com/exemploTrabalho/report/src).
-* Report chapters are in [doc folder](https://github.com/exemploTrabalho/report/doc).
+* **Source code** is in the [src folder](src/).
+* Report chapters are in [doc folder](doc/).
 
 ## Gallery
 
