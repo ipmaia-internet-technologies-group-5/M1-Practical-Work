@@ -1,0 +1,29 @@
+Somos uma organizaáo internacional sem fins lucrativos designada por SaveTheForest, 
+que tem como objetivo criar florestas saudáveis de costa a costa a partir de fundos estáveis 
+para combater e prevenir incáªndios e desbravamento florestal. O nosso profundo conhecimento das
+florestas e o histórico de colaboraáo posicionam-nos para construir um movimento de reflorestaáo
+em todo o mundo. Focamo-nos em criar florestas saudáveis e resistentes, desde cidades a grandes 
+paisagens naturais, que proporcionam benefá­cios essenciais para o clima, as pessoas, a água e a 
+vida selvagem. Avaná§amos a nossa missá£o atravá©s da inovaáo florestal, parcerias baseadas no local 
+para plantar e restaurar florestas, e construáo de movimentos. Prevemos um mundo em que os 
+significativos benefá­cios ambientais, sociais e económicos das florestas sejam plenamente realizados 
+e equitativamente disponá­veis para todas as pessoas. Abraá§amos diversas perspetivas, focamo-nos nas 
+questáµes mais prementes do dia, capacitamos os outros e envolvemo-nos em projetos, mesmo que os 
+resultados sá³ sejam experimentados pelas gerações futuras sendo a nossa missá£o principal capacitar 
+as comunidades para avaná§arem de forma sustentável e implementarem soluções inovadoras, de alto padrá£o, 
+escaláveis e duradouras para restaurar florestas e paisagens. A colaboraáo á© fundamental para ser 
+capaz de tornar a Terra mais fria com árvores, sendo que um dos nossos objetivos principais á© alcaná§ar 
+mais de 150 milháµes de árvores â€“ equivalentes a cerca de 127 500 hectares â€“ restauradas ou conservadas 
+atá© ao final de 2030, contribuindo significativamente 
+para a Dá©cada da ONU para a Restauraáo de Ecossistemas.
+
+Estrutura:
+ Página Principal - Secáo que exibe todos os elementos principais da nossa organizaáo.
+ Blog - Secáo para exibir o que a organizaáo faz como tambá©m noticias ou opiniáµes sobre o tema.
+ Projetos - Secáo para apresentar todos os projetos dos paises afiliados com a SaveTheForest.
+ Doações - Secáo para permitir que o utilizador possa doar contribuindo para a nossa causa.
+ Sobre nós - Secáo para descrever um pouco o que á© a nossa organizaáo como tambá©m os nossos objetivos
+ Contacte-nos - Secáo para exibir os nossos contactos.
+
+Github organization: https://github.com/ipmaia-internet-technologies-group-5
+Github repository: https://github.com/ipmaia-internet-technologies-group-5/M1-Practical-Work
