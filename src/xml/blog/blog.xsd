@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.savetheforest.com" 
+  xmlns:b="http://www.savetheforest.com" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <element name="catalog">
+    <complexType>
+      <sequence>
+        <element maxOccurs="unbounded" name="notice">
+          <complexType>
+            <sequence>
+              <element name="date" type="date" />
+              <element name="title" type="string" />
+              <element name="description" type="string" />
+              <element name="image" type="string" />
+              <element name="publisher" type="string" />
+              <element name="category" type="string" />
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
