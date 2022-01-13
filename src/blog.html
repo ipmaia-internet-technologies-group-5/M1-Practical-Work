@@ -314,16 +314,16 @@
                 const categoryName = notice.category;
 
                 let cachedValue = categories.get(categoryName);
-
                 if (cachedValue == undefined) {
                     cachedValue = 0;
                 }
+
                 categories.set(notice.category, ++cachedValue);
             }
 
             categories.forEach((quantity, categoryName) => {
                         const htmlElement = `<li>
-                                         <a href="#" class="d-flex">
+                                         <a href="?category=${categoryName}" class="d-flex">
                                              <p>${categoryName} ${quantity == 0 ? "" : `(${quantity})` }</p>
                                          </a>
                                      </li>`;
