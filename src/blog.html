@@ -247,10 +247,17 @@
         // Converting a blog.xml from xml to js object
         const blogContent = xotree.parseXML(read_from_file_sync("http://localhost/savetheforest/src/xml/blog/blog.xml"));
 
+        let currentCategory = findGetParameter("category");
+        if (currentCategory != null && currentCategory.toLowerCase() == "all") {
+            currentCategory = null;
+        }
+
+        let blogNotices = fetchCurrentBlogNotices();
+
         // Pagination Variables
-        const itemsQuantity = blogContent.catalog.notice.length;
-        const maxItemsPerPage = 3;
-        const maxPages = Math.ceil(itemsQuantity / maxItemsPerPage);
+        let itemsQuantity = blogNotices.length;
+        let maxItemsPerPage = 3;
+        let maxPages = Math.ceil(itemsQuantity / maxItemsPerPage);
 
         let currentPage = parseInt(findGetParameter("page"));
         if (isNaN(currentPage)) {
@@ -270,17 +277,25 @@
             }
         }
 
+        function fetchCurrentBlogNotices() {
+            let notices = blogContent.catalog.notice;
+
+            if (currentCategory != null) {
+                notices = notices.filter((n) => n.category.toLowerCase() == currentCategory.toLowerCase());
+            }
+
+            return notices.sort((a, b) => a.date >= b.date);
+        }
+
         function prepareCatalogNotices() {
             const catalogElement = document.getElementById("blog-catalog");
 
             // Removing all the elements from the catalog element before adding new ones
             catalogElement.clear();
 
-            // Ordering according the date
-            const notices = blogContent.catalog.notice.sort((a, b) => a.date >= b.date);
             for (var i = (currentPage - 1) * maxItemsPerPage; i < (currentPage) * maxItemsPerPage; i++) {
-                if (i >= notices.length) continue;
-                const notice = notices[i];
+                if (i >= blogNotices.length) continue;
+                const notice = blogNotices[i];
 
                 const wrappedData = new Date(notice.date);
                 let wrappedDescription = notice.description;
@@ -337,7 +352,7 @@
             categories.forEach((quantity, categoryName) => {
                         const htmlElement = `<li>
                                          <a href="?category=${categoryName}" class="d-flex">
-                                             <p>${categoryName} ${quantity == 0 ? "" : `(${quantity})` }</p>
+                                             <p>${categoryName} ${quantity == 0 ? "" : `(${quantity})`}</p>
                                          </a>
                                      </li>`;
 
@@ -352,14 +367,22 @@
 
             const paginationElement = document.getElementById("blog-pagination");
 
+            paginationElement.clear();
 
-            const previousItemHtml = `<li class="page-item">
+            const previousElement = htmlToElement(`<li class="page-item">
                                         <a href="#" class="page-link" aria-label="Previous">
                                             <i class="ti-angle-left"></i>
                                         </a>
-                                    </li>`
+                                    </li>`);
 
-            paginationElement.appendChild(htmlToElement(previousItemHtml));
+            previousElement.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                setCurrentPage(currentPage + 1);
+                updatePage();
+            });
+
+            paginationElement.appendChild(previousElement);
 
             for (var i = 0; i < maxPages; i++) {
                 const page = i + 1;
@@ -371,24 +394,31 @@
                 itemElement.addEventListener('click', (event) => {
                     event.preventDefault();
 
-                    handlePaginationClick(event);   
+                    handlePaginationClick(event);
                 });
 
                 paginationElement.appendChild(itemElement);
             }
 
-            const nextItemHtml = `<li class="page-item">
+            const nextElement = htmlToElement(`<li class="page-item">
                                         <a href="#" class="page-link" aria-label="Next">
                                             <i class="ti-angle-right"></i>
                                         </a>
-                                    </li>`;
+                                    </li>`);
 
-            paginationElement.appendChild(htmlToElement(nextItemHtml));
+            nextElement.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                setCurrentPage(currentPage + 1);
+                updatePage();
+            });
+
+            paginationElement.appendChild(nextElement);
         }
 
         function handlePaginationClick(event) {
             // Extracting the attribute from the element
-            const pageAttribute  = event.target.getAttribute('pagination-item');
+            const pageAttribute = event.target.getAttribute('pagination-item');
 
             /* 
              * Checking if the element actually contains a page attribute 
@@ -404,10 +434,14 @@
             setCurrentPage(pageAttribute);
 
             // Updating all notices according to the new current page
+            updatePage();
+        }
+
+        function updatePage() {
             prepareCatalogNotices();
+            preparePagination();
 
             document.getElementById("blog-categories").scrollIntoView();
-
         }
     </script>
 
