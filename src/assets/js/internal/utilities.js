@@ -12,6 +12,12 @@ Date.prototype.getShortMonthName = function() {
     return this.getMonthName().substr(0, 3);
 };
 
+HTMLElement.prototype.clear = function() {
+    while (this.lastChild) {
+        this.removeChild(this.lastChild);
+    }
+}
+
 function read_from_file_sync(path) {
     let text = null;
 

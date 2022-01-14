@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
     <link rel="stylesheet" href="assets/css/boostrap.css">
-    <link rel="stylesheet" href="assets/css/A.style.css.pagespeed.cf.4BNA0tOFq8.css">
+    <link rel="stylesheet" href="assets/css/template.css">
 </head>
 
 <body>
@@ -182,8 +182,8 @@
                                             <input type="email" name="email" id="newsletter-form-email" placeholder="Enter your email" class="placeholder hide-on-focus">
                                             <div class="form-icon">
                                                 <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-<i class="fas fa-arrow-right"></i>
-</button>
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
                                             </div>
                                             <div class="mt-10 info"></div>
                                         </form>
@@ -253,18 +253,31 @@
         const maxPages = Math.ceil(itemsQuantity / maxItemsPerPage);
 
         let currentPage = parseInt(findGetParameter("page"));
-        if (currentPage > maxPages) {
-            currentPage = maxPages;
+        if (isNaN(currentPage)) {
+            currentPage = 1;
         }
+        // Forcing to check the boundaries
+        setCurrentPage(currentPage);
 
         preparePagination(); // Preparing the pagination after showing the catalog
         prepareCatalogNotices();
         prepareCategories();
 
+        function setCurrentPage(newPage) {
+            currentPage = newPage;
+            if (currentPage > maxPages) {
+                currentPage = maxPages;
+            }
+        }
+
         function prepareCatalogNotices() {
             const catalogElement = document.getElementById("blog-catalog");
 
-            const notices = blogContent.catalog.notice.sort((a, b) => a >= b);
+            // Removing all the elements from the catalog element before adding new ones
+            catalogElement.clear();
+
+            // Ordering according the date
+            const notices = blogContent.catalog.notice.sort((a, b) => a.date >= b.date);
             for (var i = (currentPage - 1) * maxItemsPerPage; i < (currentPage) * maxItemsPerPage; i++) {
                 if (i >= notices.length) continue;
                 const notice = notices[i];
@@ -351,11 +364,17 @@
             for (var i = 0; i < maxPages; i++) {
                 const page = i + 1;
 
-                const html = `<li class="page-item ${page == currentPage ? "active" : ""}">
-                                        <a href="?page=${page}" class="page-link">${page}</a>
-                                    </li>`;
+                const itemElement = htmlToElement(`<li class="page-item ${page == currentPage ? "active" : ""}">
+                                        <a class="page-link" pagination-item="${page}">${page}</a>
+                                    </li>`);
 
-                paginationElement.appendChild(htmlToElement(html));
+                itemElement.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    handlePaginationClick(event);   
+                });
+
+                paginationElement.appendChild(itemElement);
             }
 
             const nextItemHtml = `<li class="page-item">
@@ -365,6 +384,30 @@
                                     </li>`;
 
             paginationElement.appendChild(htmlToElement(nextItemHtml));
+        }
+
+        function handlePaginationClick(event) {
+            // Extracting the attribute from the element
+            const pageAttribute  = event.target.getAttribute('pagination-item');
+
+            /* 
+             * Checking if the element actually contains a page attribute 
+             * (If the user clicks on the "li" element instead of clicking on the "a" element) 
+             */
+            if (pageAttribute == null) {
+                return;
+            }
+
+            if (currentPage == pageAttribute) return;
+
+            // Updating the current page variable
+            setCurrentPage(pageAttribute);
+
+            // Updating all notices according to the new current page
+            prepareCatalogNotices();
+
+            document.getElementById("blog-categories").scrollIntoView();
+
         }
     </script>
 
