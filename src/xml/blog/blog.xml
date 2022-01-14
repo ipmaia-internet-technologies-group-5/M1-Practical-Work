@@ -6,92 +6,82 @@
                              blog.xsd">
     <notice>
         <date>2002-09-24</date>
-        <title>Title Test 1</title>
+        <title>Destruction of Primary Rainforests Increased by 12% from 2019 to 2020</title>
         <description>
             <![CDATA[Description Test
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                     software like Aldus PageMaker including versions of Lorem Ipsum.
+            The tropics lost 12.2 million acres of tree cover by 2020, according to University of Maryland data 
+            released today in Global Forest Watch. Of this total, 4.2 million hectares, an area the size of the Netherlands
+            occurred in humid tropical primary forests, which are especially important for carbon storage and biodiversity. 
+            Carbon emissions from this loss of primary forests (2.64 Gt CO2) are equivalent to annual emissions of 570 million 
+            cars, more than double the number of vehicles circulating in the United States.
             ]]>
         </description>
-        <image>new1.png</image>
+        <image>news1.jpg</image>
         <publisher>Diogo Vaz</publisher>
-        <category>Category Test 1</category>
+        <category>Destruction of forests</category>
     </notice>
     <notice>
         <date>2002-10-24</date>
-        <title>Title Test 2</title>
+        <title>Venezuelan People and Forests Suffer as Gold Mining Advances</title>
         <description>
             <![CDATA[Description Test
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                     software like Aldus PageMaker including versions of Lorem Ipsum.
+            Mining in the Amazon is a pervasive threat to the world’s largest rainforest— and it’s on the rise. 
+            Gold prices spiked last summer and have remained high. COVID-19-related stimulus packages supported 
+            gold prices, and the economic threat posed by the pandemic turned investors towards the seemingly stable 
+            investment in gold. Demand for the metal has accelerated. And where demand has grown, deforestation and 
+            human rights abuses have followed. Venezuela’s rainforests and people have been hit particularly 
+            hard by gold mining, where estimates indicate that between 80% and 90% is mined illegally.
             ]]>
         </description>
-        <image>new1.png</image>
+        <image>news2.jpg</image>
         <publisher>David Ferreira</publisher>
-        <category>Category Test 2</category>
+        <category>Destruction of forests</category>
     </notice>
     <notice>
         <date>2002-12-12</date>
-        <title>Title Test 3</title>
+        <title>Supplied with Tech, Indigenous Forest Monitors Curb Deforestation</title>
         <description>
             <![CDATA[Description Test
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                     software like Aldus PageMaker including versions of Lorem Ipsum.
+            Loreto, Peru — A forest monitor from the Indigenous community of Vista Hermosa checks her smartphone. 
+            A satellite map showing the forest around her pops up. Her community’s territory is outlined and 
+            pink pixels—deforestation alerts—are visible within the boundaries. She and her fellow forest monitors 
+            react quickly, patrolling to the alert to confirm the deforestation. Finding the stumps and area cleared, 
+            they snap some photos and record their observations, and return to their community to relay the information 
+            and decide what to do next.
             ]]>
         </description>
-        <image>new1.png</image>
+        <image>news3.jpg</image>
         <publisher>Diogo Vaz</publisher>
-        <category>Category Test 3</category>
+        <category>Technologies for saving forests</category>
     </notice>
     <notice>
         <date>2021-05-24</date>
-        <title>Title Test 4</title>
+        <title>2022 Must Be a Turning Point for Forests. 2021 Data Shows Us Why</title>
         <description>
             <![CDATA[Description Test
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                     software like Aldus PageMaker including versions of Lorem Ipsum.
+            More than 12 million hectares of tree cover in the tropics was lost in 2020 alone, according to analysis 
+            of University of Maryland data by WRI. Most alarmingly, that included 4.2 million hectares of previously 
+            undisturbed primary tropical forests.This loss represents a crisis for climate stability and biodiversity 
+            conservation, as well as a humanitarian disaster and lost economic opportunity. This analysis now covering 
+            20 years of data shows all that’s been lost — as well as the interventions that work.
             ]]>
         </description>
-        <image>new1.png</image>
+        <image>news4.jpg</image>
         <publisher>Diogo Vaz</publisher>
-        <category>Category Test 4</category>
+        <category>Destruction of forests</category>
     </notice>
     <notice>
         <date>2021-05-24</date>
-        <title>Title Test 5</title>
+        <title>THE FORESTS ARE BURNING IN THE AMAZON AGAIN...</title>
         <description>
             <![CDATA[Description Test
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                     software like Aldus PageMaker including versions of Lorem Ipsum.
+            It’s the dry season in Brazil, and forest fires are spreading again. Though some can be caused 
+            naturally by factors such as lightning strikes, most are actually started by farmers and loggers 
+            clearing land for crops or grazing.
             ]]>
         </description>
-        <image>new1.png</image>
+        <image>news5.jpg</image>
         <publisher>David Ferreira</publisher>
-        <category>Category Test 4</category>
+        <category>Amazon</category>
     </notice>
 </catalog>

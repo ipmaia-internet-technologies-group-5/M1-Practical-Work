@@ -255,8 +255,8 @@
         let blogNotices = fetchCurrentBlogNotices();
 
         // Pagination Variables
+        const maxItemsPerPage = 3;
         let itemsQuantity = blogNotices.length;
-        let maxItemsPerPage = 3;
         let maxPages = Math.ceil(itemsQuantity / maxItemsPerPage);
 
         let currentPage = parseInt(findGetParameter("page"));
@@ -278,13 +278,19 @@
         }
 
         function fetchCurrentBlogNotices() {
+            function compareDates(a, b) {
+                if (a == b) return 0;
+
+                return convertToDate(b.date) > convertToDate(a.date) ? -1 : 1;
+            }
+
             let notices = blogContent.catalog.notice;
 
             if (currentCategory != null) {
                 notices = notices.filter((n) => n.category.toLowerCase() == currentCategory.toLowerCase());
             }
 
-            return notices.sort((a, b) => a.date >= b.date);
+            return notices.sort(compareDates);
         }
 
         function prepareCatalogNotices() {
@@ -297,7 +303,7 @@
                 if (i >= blogNotices.length) continue;
                 const notice = blogNotices[i];
 
-                const wrappedData = new Date(notice.date);
+                const wrappedData = convertToDate(notice.date);
                 let wrappedDescription = notice.description;
 
                 if (wrappedDescription.length > 400) {
@@ -319,8 +325,8 @@
                                         </a>
                                         <p>${wrappedDescription}</p>
                                         <ul class="blog-info-link">
-                                            <li><a href="#"><i class="fa fa-user"></i> ${notice.publisher}</a></li>
-                                            <li><a href="#"><i class="fa fa-calendar"></i> ${notice.date}</a></li>
+                                            <li><a><i class="fa fa-user"></i> ${notice.publisher}</a></li>
+                                            <li><a><i class="fa fa-calendar"></i>${notice.date}</a></li>
                                         </ul>
                                     </div>
                                 </article>`;

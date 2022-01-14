@@ -56,3 +56,9 @@ function htmlToElement(html) {
     template.innerHTML = html;
     return template.content.firstChild;
 }
+
+function convertToDate(dateString) {
+    let d = dateString.split("-");
+    let dat = new Date(parseInt(d[0]), parseInt(d[1]) - 1, parseInt(d[2]));
+    return dat;
+}
