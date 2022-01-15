@@ -5,9 +5,7 @@
     <project>
         <id>1</id>
         <title>Brazil, wildlife corridors</title>
-        <description>The Atlantic Forest has been reduced to green fragments due to agricultural expansion. It used to be 6 times the size of the United Kingdom, 
-            but it is now only a forest in name. Over the course of 20 years, it has lost over 80% of its original forest cover. No other large tropical forest has suffered this 
-            much loss, which has affected the rich biodiversity in the area.</description>
+        <description>The Atlantic Forest has been reduced to green fragments due to agricultural expansion.</description>
         <image>project1.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
@@ -15,11 +13,7 @@
     <project>
         <id>1</id>
         <title>Madagascar Kalamboro</title>
-        <description>Healthy mangroves were once widespread along the coast of Madagascar, capturing sediments that destroy coral reefs, sheltering highly diverse mollusc and 
-            crustacean communities and providing resources for birds, sea turtles, manatees as well as the Malagasy people themselves. In the last decades, human activities in 
-            the form of urban development, overfishing, rice farming, salt production and deforestation have caused the widespread destruction of this unique ecosystem. With its 
-            rivers running ‘blood red’ staining the surrounding Indian Ocean from soil erosion brought about by deforestation, as early as 1983 astronauts remarked that is looked 
-            as if Madagascar was bleeding to death. This metaphor highlights one of Madagascar's greatest environmental problems.</description>
+        <description>Healthy mangroves were once widespread along the coast of Madagascar, capturing sediments that destroy coral reefs.</description>
         <image>project2.jpg</image>
         <goal>48624</goal>
         <raised>32481</raised>
@@ -27,11 +21,7 @@
     <project>
         <id>2</id>
         <title>Philippines</title>
-        <description>The aim of the restoration efforts was twofold, to plant trees in the Sarangani province and increase the health, education, income and overall well-being 
-            of the local communities. The forest was restored using what is known as the framework species method, which involves planting a suite of native species to promote 
-            more rapid natural succession. Through this, the proejcts aimed to restore the area's forest and biodiversity. Species were chosen to encourage the return of for 
-            important indigeous species and provide important ecosystems services, like stabilising soils, maintaining the health of the water cycle and sequestering carbon from 
-            the atmosphere. </description>
+        <description>The aim of the restoration efforts was twofold, to plant trees in the Sarangani province and increase the health.</description>
         <image>project3.jpg</image>
         <goal>68125</goal>
         <raised>65127</raised>
@@ -39,9 +29,7 @@
     <project>
         <id>3</id>
         <title>Zambia Conservation</title>
-        <description>Large swathes of forest are lost in Zambia annually, largely due to charcoal production and agriculture. Coupled with the high levels of poverty in the country, 
-            this affords Zambia one of the highest rates of deforestation in the world. Deforestation and mono-cropping by farmers in the Luanshya district has resulted in a loss of 
-            soil organic matter and threatens the future sustainability of local livelihoods.</description>
+        <description>Large swathes of forest are lost in Zambia annually, largely due to charcoal production and agriculture.</description>
         <image>project4.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
@@ -49,10 +37,7 @@
     <project>
         <id>4</id>
         <title>Kenya Meru</title>
-        <description>Kenya's forest once measured a mere 2% of the country's total land cover. Some of the most significant reserves of forest habitat reside in Mount Kenya national 
-            park. Yet Mount Kenya is also facing severe deforestation rates, losing about 30% of its forest cover through illegal activities such as timber harvesting, shamba systems 
-            (where agricultural crops are grown together with forest tree species) and charcoal burning. Such alarming rates threaten local wildlife and the liveilhoods of local 
-            communities.</description>
+        <description>Kenya's forest once measured a mere 2% of the country's total land cover.</description>
         <image>project5.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
@@ -60,10 +45,7 @@
     <project>
         <id>5</id>
         <title>India Sirumalai</title>
-        <description>The vegetation ranges from tropical thorn forest to mixed deciduous forest, dry evergreen forest, moist deciduous forest and semi-evergreen forest, all severely 
-            degraded. The major causes of deforestation are expansion of farmland, charcoal and fuel wood production, utilization of wood for construction and grazing by cattle. Out of 
-            all these, the major one is the population pressure, compelling farmers to encroach on the few remaining forested areas for farmland. As a result, land degradation, wild 
-            life extinction, over-grazing and fodder shortage have occurred.</description>
+        <description>The vegetation ranges from tropical thorn forest to mixed deciduous forest, dry evergreen forest, moist deciduous forest and semi-evergreen forest.</description>
         <image>project6.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
