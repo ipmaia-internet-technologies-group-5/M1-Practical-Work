@@ -21,7 +21,7 @@
     <project>
         <id>2</id>
         <title>Philippines</title>
-        <description>The aim of the restoration efforts was twofold, to plant trees in the Sarangani province and increase the health.</description>
+        <description>The aim of the restoration efforts was twofold, to plant trees in the Sarangani province and increase the health. The project aimed to restore the area's forest and biodiversity.  </description>
         <image>project3.jpg</image>
         <goal>68125</goal>
         <raised>65127</raised>
@@ -29,7 +29,7 @@
     <project>
         <id>3</id>
         <title>Zambia Conservation</title>
-        <description>Large swathes of forest are lost in Zambia annually, largely due to charcoal production and agriculture.</description>
+        <description>Large swathes of forest are lost in Zambia annually, largely due to charcoal production and agriculture. With high levels of poverty in the country.</description>
         <image>project4.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
@@ -37,7 +37,7 @@
     <project>
         <id>4</id>
         <title>Kenya Meru</title>
-        <description>Kenya's forest once measured a mere 2% of the country's total land cover.</description>
+        <description>Kenya's forest once measured a mere 2% of the country's total land cover. The reserves of forest habitat reside in Mount Kenya national park. </description>
         <image>project5.jpg</image>
         <goal>50000</goal>
         <raised>30000</raised>
