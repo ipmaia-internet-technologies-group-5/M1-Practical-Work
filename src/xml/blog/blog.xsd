@@ -9,6 +9,7 @@
         <element maxOccurs="unbounded" name="notice">
           <complexType>
             <sequence>
+              <element name="id" type="integer" />
               <element name="date" type="date" />
               <element name="title" type="string" />
               <element name="description" type="string" />

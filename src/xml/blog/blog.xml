@@ -5,6 +5,7 @@
          xsi:schemaLocation="http://www.savetheforest.com
                              blog.xsd">
     <notice>
+        <id>0</id>
         <date>2002-09-24</date>
         <title>Destruction of Primary Rainforests Increased by 12% from 2019 to 2020</title>
         <description>
@@ -42,6 +43,7 @@
         <category>Destruction of forests</category>
     </notice>
     <notice>
+        <id>1</id>
         <date>2002-10-24</date>
         <title>Venezuelan People and Forests Suffer as Gold Mining Advances</title>
         <description>
@@ -80,6 +82,7 @@
         <category>Destruction of forests</category>
     </notice>
     <notice>
+        <id>2</id>
         <date>2002-12-12</date>
         <title>Supplied with Tech, Indigenous Forest Monitors Curb Deforestation</title>
         <description>
@@ -135,6 +138,7 @@
         <category>Technologies for saving forests</category>
     </notice>
     <notice>
+        <id>3</id>
         <date>2021-05-24</date>
         <title>2021 Must Be a Turning Point for Forests. 2020 Data Shows Us Why</title>
         <description>
@@ -206,6 +210,7 @@
         <category>Destruction of forests</category>
     </notice>
     <notice>
+        <id>4</id>
         <date>2021-05-24</date>
         <title>THE FORESTS ARE BURNING IN THE AMAZON AGAIN...</title>
         <description>
@@ -232,6 +237,7 @@
         <category>Amazon</category>
     </notice>
     <notice>
+        <id>5</id>
         <date>2021-05-24</date>
         <title>Just 7 Commodities Replaced an Area of Forest Twice the Size of Germany from 2001-2015</title>
         <description>
