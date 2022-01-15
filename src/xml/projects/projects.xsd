@@ -13,7 +13,7 @@
               <element type="string" name="description"/>
               <element type="string" name="image"/>
               <element type="int" name="goal"/>
-              <element type="short" name="raised"/>
+              <element type="int" name="raised"/>
             </sequence>
           </complexType>
         </element>
