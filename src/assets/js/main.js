@@ -26,7 +26,6 @@
 (function($) {
     "use strict"
 
-
     /* 1. sticky And Scroll UP */
     $(window).on('scroll', function() {
         var scroll = $(window).scrollTop();
