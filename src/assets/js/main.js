@@ -273,4 +273,9 @@
         IO.observe(element);
     });
 
+    $("form:not(#contactForm)").submit(function(e) {
+        alert("Currently unavailable, please try later.");
+        e.preventDefault();
+    });
+
 })(jQuery);
