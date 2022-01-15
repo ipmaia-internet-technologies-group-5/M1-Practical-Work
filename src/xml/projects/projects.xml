@@ -5,33 +5,33 @@
     <project>
         <id>1</id>
         <title>Brazil, wildlife corridors</title>
-        <description>The Atlantic Forest has been reduced to green fragments due to agricultural expansion.</description>
+        <description>The Atlantic Forest has been reduced to green fragments due to agricultural expansion. Over the course of 20 years, it has lost over 80% of its original forest cover.</description>
         <image>project1.jpg</image>
         <goal>50000</goal>
-        <raised>30000</raised>
+        <raised>45000</raised>
     </project>
     <project>
         <id>1</id>
         <title>Madagascar Kalamboro</title>
         <description>Healthy mangroves were once widespread along the coast of Madagascar, capturing sediments that destroy coral reefs.</description>
         <image>project2.jpg</image>
-        <goal>48624</goal>
-        <raised>32481</raised>
+        <goal>35000</goal>
+        <raised>22000</raised>
     </project>
     <project>
         <id>2</id>
         <title>Philippines</title>
         <description>The aim of the restoration efforts was twofold, to plant trees in the Sarangani province and increase the health. The project aimed to restore the area's forest and biodiversity.  </description>
         <image>project3.jpg</image>
-        <goal>68125</goal>
-        <raised>65127</raised>
+        <goal>38000</goal>
+        <raised>33000</raised>
     </project>
     <project>
         <id>3</id>
         <title>Zambia Conservation</title>
         <description>Large swathes of forest are lost in Zambia annually, largely due to charcoal production and agriculture. With high levels of poverty in the country.</description>
         <image>project4.jpg</image>
-        <goal>50000</goal>
+        <goal>40000</goal>
         <raised>30000</raised>
     </project>
     <project>
@@ -40,14 +40,14 @@
         <description>Kenya's forest once measured a mere 2% of the country's total land cover. The reserves of forest habitat reside in Mount Kenya national park. </description>
         <image>project5.jpg</image>
         <goal>50000</goal>
-        <raised>30000</raised>
+        <raised>25000</raised>
     </project>
     <project>
         <id>5</id>
         <title>India Sirumalai</title>
         <description>The vegetation ranges from tropical thorn forest to mixed deciduous forest, dry evergreen forest, moist deciduous forest and semi-evergreen forest.</description>
         <image>project6.jpg</image>
-        <goal>50000</goal>
-        <raised>30000</raised>
+        <goal>10000</goal>
+        <raised>4000</raised>
     </project>
 </projects>
