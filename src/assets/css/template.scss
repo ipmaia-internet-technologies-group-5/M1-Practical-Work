@@ -1205,6 +1205,9 @@ hr {
         &:hover {
             box-shadow: 0 8px 8px 0 rgba(2, 25, 65, 0.08);
         }
+        .properties-caption {
+            min-height: 250px;
+        }
         .properties-img img {
             width: 100%;
             border-radius: 10px 10px 0 0;
