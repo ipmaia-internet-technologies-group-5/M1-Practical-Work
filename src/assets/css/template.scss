@@ -3584,3 +3584,43 @@ del {
 .switch-wrap {
     margin-bottom: 10px;
 }
+
+.donation-frequency {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .87);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #1faf51;
+    border: 2px solid #1faf51;
+    transition: all .5s ease-out;
+    label {
+        position: relative;
+        padding: 15px;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+        input {
+            appearance: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+    &.active {
+        color: rgb(255, 255, 255);
+        background-color: #1faf51;
+        * {
+            cursor: default;
+        }
+    }
+}

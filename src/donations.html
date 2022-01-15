@@ -72,45 +72,6 @@
                 </div>
             </div>
         </div>
-
-        <style>
-            .donation-frequency {
-                color: #fff;
-                font-size: 15px;
-                line-height: 18px;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: rgba(0, 0, 0, .87);
-                background-color: #fff;
-                display: flex;
-                justify-content: center;
-                width: 50%;
-                color: rgb(245, 178, 36);
-                border: 2px solid rgb(245, 178, 36);
-            }
-            
-            .donation-frequency label {
-                position: relative;
-                padding: 15px;
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                text-align: center;
-            }
-            
-            .donation-frequency input {
-                appearance: none;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                position: absolute;
-            }
-            
-            .donation-frequency:hover {
-                color: rgb(255, 255, 255);
-                background-color: rgb(245, 178, 36);
-            }
-        </style>
         <section class="donation-section">
             <div class="container">
                 <div class="row">
@@ -125,7 +86,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <div class="row m-0">
-                                            <div class="col-sm-6 donation-frequency">
+                                            <div class="col-sm-6 donation-frequency active">
                                                 <label for="donation-onetime-radio-input" class="donation-frequency-label">
                                                     <input type="radio" class="donation-frequency-input"
                                                         id="donation-onetime-radio-input" name="donation-frequency"
@@ -179,7 +140,7 @@
                                 <div class="single-footer-caption mb-20">
 
                                     <div class="footer-logo mb-35">
-                                        <a href="index.html"><img src="assets/img/logo/logo2.png" alt="" width="259"></a>
+                                        <a href="index.html"><img src="assets/img/logo/logo2.png" alt="" width="190"></a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
@@ -290,6 +251,30 @@
     <script src="assets/js/vendor/jquery.validate-1.11.1.min.js"></script>
     <script src="assets/js/mail-script.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const elements = document.getElementsByClassName("donation-frequency");
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+
+            element.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                removeActiveClass(element.parentElement.getElementsByClassName("donation-frequency"));
+
+                element.classList.add("active");
+            });
+        }
+
+        function removeActiveClass(elements) {
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+
+                element.classList.remove("active");
+            }
+        }
+    </script>
 
 </body>
 

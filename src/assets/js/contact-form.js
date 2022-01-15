@@ -66,7 +66,7 @@ $(document).ready(function() {
                         minlength: "your Number must consist of at least 5 characters"
                     },
                     email: {
-                        required: "no email, no message"
+                        required: "you must have a email, don't you?"
                     },
                     message: {
                         required: "um...yea, you have to write something to send this form.",
