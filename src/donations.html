@@ -24,7 +24,6 @@
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
@@ -74,6 +73,44 @@
             </div>
         </div>
 
+        <style>
+            .donation-frequency {
+                color: #fff;
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, .87);
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                color: rgb(245, 178, 36);
+                border: 2px solid rgb(245, 178, 36);
+            }
+            
+            .donation-frequency label {
+                position: relative;
+                padding: 15px;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                text-align: center;
+            }
+            
+            .donation-frequency input {
+                appearance: none;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            
+            .donation-frequency:hover {
+                color: rgb(255, 255, 255);
+                background-color: rgb(245, 178, 36);
+            }
+        </style>
         <section class="donation-section">
             <div class="container">
                 <div class="row">
@@ -85,6 +122,26 @@
                     <div class="col-lg-6">
                         <form class="form-contact contact_form" method="post" id="contactForm" novalidate="">
                             <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="row m-0">
+                                            <div class="col-sm-6 donation-frequency">
+                                                <label for="donation-onetime-radio-input" class="donation-frequency-label">
+                                                    <input type="radio" class="donation-frequency-input"
+                                                        id="donation-onetime-radio-input" name="donation-frequency"
+                                                        tabindex="-1" aria-checked="true">One time
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-6 donation-frequency">
+                                                <label for="donation-monthly-radio-input" class="donation-frequency-label">
+                                                    <input type="radio" class="donation-frequency-input"
+                                                        id="donation-monthly-radio-input" name="donation-frequency"
+                                                        tabindex="-1" aria-checked="false">Monthly
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control valid" name="first_name" id="first_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your first name'" placeholder="Enter your first name">
