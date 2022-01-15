@@ -3,7 +3,6 @@ $(document).ready(function() {
     (function($) {
         "use strict";
 
-
         jQuery.validator.addMethod('answercheck', function(value, element) {
             return this.optional(element) || /^\\bcat\\b$/.test(value)
         }, "type the correct answer -_-");
@@ -12,6 +11,18 @@ $(document).ready(function() {
         $(function() {
             $('#contactForm').validate({
                 rules: {
+                    first_name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    last_name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
                     name: {
                         required: true,
                         minlength: 2
@@ -34,6 +45,14 @@ $(document).ready(function() {
                     }
                 },
                 messages: {
+                    first_name: {
+                        required: "come on, you have a first name, don't you?",
+                        minlength: "your name must consist of at least 2 characters"
+                    },
+                    last_name: {
+                        required: "come on, you have a last name, don't you?",
+                        minlength: "your name must consist of at least 2 characters"
+                    },
                     name: {
                         required: "come on, you have a name, don't you?",
                         minlength: "your name must consist of at least 2 characters"

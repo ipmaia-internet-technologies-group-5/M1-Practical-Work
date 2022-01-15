@@ -221,12 +221,6 @@ hr {
     }
 }
 
-@-webkit-keyframes heartbeat {
-    to {
-        transform: scale(1.03);
-    }
-}
-
 @keyframes rotateme {
     from {
         transform: rotate(0deg);
@@ -474,7 +468,6 @@ hr {
     line-height: 1;
     line-height: 0;
     cursor: pointer;
-    -moz-user-select: none;
     transition: color .4s linear;
     position: relative;
     z-index: 1;
@@ -574,7 +567,6 @@ hr {
     line-height: 1;
     line-height: 0;
     cursor: pointer;
-    -moz-user-select: none;
     transition: color .4s linear;
     position: relative;
     z-index: 1;
@@ -2482,8 +2474,18 @@ hr {
     width: 100%;
 }
 
+.counter-img {
+    img {
+        width: 56px;
+        height: 47px;
+    }
+}
+
 .form-group {
     margin-bottom: 1rem;
+    .error {
+        color: #bf0000;
+    }
 }
 
 .dropdown .dropdown-menu {
@@ -2557,6 +2559,14 @@ hr {
 .contact-section,
 .donation-section {
     padding: 130px 0 100px;
+    .donation-helper {
+        display: block;
+        clear: both;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #333;
+        margin: 5px 0;
+    }
 }
 
 @media (max-width: 991px) {
