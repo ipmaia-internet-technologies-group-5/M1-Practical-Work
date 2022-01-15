@@ -2854,41 +2854,6 @@ hr {
   transition: all 0.3s;
 }
 
-.contact-info {
-  margin-bottom: 25px;
-}
-
-.contact-info__icon {
-  margin-right: 20px;
-}
-
-.contact-info__icon i,
-.contact-info__icon span {
-  color: #8f9195;
-  font-size: 27px;
-}
-
-.contact-info .media-body h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #2a2a2a;
-}
-
-.contact-info .media-body h3 a:hover {
-  color: #1f2b7b;
-}
-
-.contact-info .media-body p {
-  color: #8a8a8a;
-}
-
-.contact-title {
-  font-size: 27px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
 .form-contact label {
   font-size: 14px;
 }
@@ -2937,18 +2902,57 @@ hr {
   height: 100% !important;
 }
 
-.contact-section {
+.contact-info {
+  margin-bottom: 25px;
+}
+
+.contact-info__icon {
+  margin-right: 20px;
+}
+
+.contact-info__icon i,
+.contact-info__icon span {
+  color: #8f9195;
+  font-size: 27px;
+}
+
+.contact-info .media-body h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.contact-info .media-body h3 a:hover {
+  color: #1f2b7b;
+}
+
+.contact-info .media-body p {
+  color: #8a8a8a;
+}
+
+.contact-title,
+.donation-title {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-section,
+.donation-section {
   padding: 130px 0 100px;
 }
 
 @media (max-width: 991px) {
-  .contact-section {
+  .contact-section,
+  .donation-section {
     padding: 70px 0 40px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .contact-section {
+  .contact-section,
+  .donation-section {
     padding: 80px 0 50px;
   }
 }
@@ -3269,6 +3273,12 @@ del {
   background: #f9f9ff;
   padding: 15px 0 30px 0;
   min-width: 800px;
+}
+
+.progress-table th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .progress-table .serial {
