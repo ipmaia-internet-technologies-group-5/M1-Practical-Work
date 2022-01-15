@@ -1086,7 +1086,7 @@ hr {
 }
 
 .slider-2 {
-  background-image: url(../img/background/background2.jpg);
+  background-image: url(../img/background/burning_forest2.jpg);
 }
 
 .slider-3 {
@@ -1094,23 +1094,23 @@ hr {
 }
 
 .slider-4 {
-  background-image: url(../img/background/banner.jpg);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-5 {
-  background-image: url(../img/background/banner2.png);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-6 {
-  background-image: url(../img/background/background.png);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-7 {
-  background-image: url(../img/background/background.png);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-8 {
-  background-image: url(../img/background/background3.jpg);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-9 {
@@ -3320,11 +3320,11 @@ del {
   padding-left: 30px;
 }
 
-.progress-table .country {
+.progress-table .desforestation {
   width: 50%;
 }
 
-.progress-table .visit {
+.progress-table .million-hectares {
   width: 37%;
 }
 
@@ -3340,8 +3340,8 @@ del {
 }
 
 .progress-table .table-head .serial,
-.progress-table .table-head .country,
-.progress-table .table-head .visit,
+.progress-table .table-head .desforestation,
+.progress-table .table-head .million-hectares,
 .progress-table .table-head .percentage {
   color: #415094;
   line-height: 40px;
@@ -3358,8 +3358,8 @@ del {
 }
 
 .progress-table .table-row .serial,
-.progress-table .table-row .country,
-.progress-table .table-row .visit,
+.progress-table .table-row .desforestation,
+.progress-table .table-row .million-hectares,
 .progress-table .table-row .percentage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3369,7 +3369,7 @@ del {
           align-items: center;
 }
 
-.progress-table .table-row .country img {
+.progress-table .table-row .desforestation img {
   margin-right: 15px;
   height: 30px;
 }

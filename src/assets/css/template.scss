@@ -2884,10 +2884,10 @@ del {
         width: 13%;
         padding-left: 30px;
     }
-    .country {
+    .desforestation {
         width: 50%;
     }
-    .visit {
+    .million-hectares {
         width: 37%;
     }
     .percentage {
@@ -2897,8 +2897,8 @@ del {
     .table-head {
         display: flex;
         .serial,
-        .country,
-        .visit,
+        .desforestation,
+        .million-hectares,
         .percentage {
             color: #415094;
             line-height: 40px;
@@ -2911,13 +2911,13 @@ del {
         border-top: 1px solid #edf3fd;
         display: flex;
         .serial,
-        .country,
-        .visit,
+        .desforestation,
+        .million-hectares,
         .percentage {
             display: flex;
             align-items: center;
         }
-        .country img {
+        .desforestation img {
             margin-right: 15px;
             height: 30px;
         }
