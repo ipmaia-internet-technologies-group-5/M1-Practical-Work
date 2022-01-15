@@ -4910,3 +4910,7 @@ img.mfp-img {
 .mb-5 {
     margin-bottom: 5em;
 }
+
+.font-italic {
+    font-style: italic;
+}
