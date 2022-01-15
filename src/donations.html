@@ -82,46 +82,70 @@
                     </div>
                     <div class="col-lg-6">
                         <form class="form-contact contact_form" method="post" id="contactForm" novalidate="">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <div class="row m-0">
-                                            <div class="col-sm-6 donation-frequency active">
-                                                <label for="donation-onetime-radio-input" class="donation-frequency-label">
-                                                    <input type="radio" class="donation-frequency-input"
-                                                        id="donation-onetime-radio-input" name="donation-frequency"
-                                                        tabindex="-1" aria-checked="true">One time
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-6 donation-frequency">
-                                                <label for="donation-monthly-radio-input" class="donation-frequency-label">
-                                                    <input type="radio" class="donation-frequency-input"
-                                                        id="donation-monthly-radio-input" name="donation-frequency"
-                                                        tabindex="-1" aria-checked="false">Monthly
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="form-group row ml-0 mr-1">
+                                <p>Type:</p>
+                                <div class="col-sm-6 donation-frequency active">
+                                    <label for="donation-onetime-radio-input" class="donation-frequency-label">
+                                        <input type="radio" class="donation-frequency-input"
+                                            id="donation-onetime-radio-input" name="donation-frequency" tabindex="-1"
+                                            aria-checked="true">One time
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 donation-frequency">
+                                    <label for="donation-monthly-radio-input" class="donation-frequency-label">
+                                        <input type="radio" class="donation-frequency-input"
+                                            id="donation-monthly-radio-input" name="donation-frequency" tabindex="-1"
+                                            aria-checked="false">Monthly
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row ml-0 mr-1">
+                                <p>Amount:</p>
+                                <div class="col donation-amount active">
+                                    <label for="donation-onetime-radio-input" class="donation-amount-label">
+                                        <input type="radio" class="donation-frequency-input"
+                                            id="donation-amount-input-25" name="donation-amount" tabindex="-1"
+                                            aria-checked="true">25€
+                                    </label>
+                                </div>
+                                <div class="col donation-amount">
+                                    <label for="donation-monthly-radio-input" class="donation-amount-label">
+                                        <input type="radio" class="donation-amount-input"
+                                            id="donation-amount-input-50" name="donation-amount" tabindex="-1"
+                                            aria-checked="false">50€
+                                    </label>
+                                </div>
+                                <div class="col donation-amount">
+                                    <label for="donation-monthly-radio-input" class="donation-amount-label">
+                                        <input type="radio" class="donation-amount-input"
+                                            id="donation-amount-input-100" name="donation-amount" tabindex="-1"
+                                            aria-checked="false">100€
+                                    </label>
+                                </div>
+                                <div class="col donation-amount">
+                                    <label for="donation-monthly-radio-input" class="donation-amount-label">
+                                        <input type="radio" class="donation-amount-input"
+                                            id="donation-amount-input-100" name="donation-amount" tabindex="-1"
+                                            aria-checked="false">150€
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <input class="form-control valid" name="first_name" id="first_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your first name'" placeholder="Enter your first name">
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="first_name" id="first_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your first name'" placeholder="Enter your first name">
-                                    </div>
+                                    <input class="form-control valid" name="last_name" id="last_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your last name'" placeholder="Enter your last name">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="last_name" id="last_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your last name'" placeholder="Enter your last name">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                        <small class="donation-helper"> Your receipt will be emailed here.</small>
-                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    <small class="donation-helper"> Your receipt will be emailed here.</small>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                <button type="submit" class="button button-contactForm boxed-btn">Donate Now</button>
                             </div>
                         </form>
                     </div>
@@ -144,7 +168,8 @@
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
-                                            <p>SaveTheForest, which aims to create healthy forests from coast to coast from stable backgrounds to fight and prevent fires and forest clearing.</p>
+                                            <p>SaveTheForest, which aims to create healthy forests from coast to coast from stable backgrounds to fight and prevent fires and forest clearing.
+                                            </p>
                                         </div>
                                     </div>
 
@@ -236,8 +261,6 @@
     <script src="assets/js/vendor/owl.carousel-2.3.4.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
 
-
-
     <script src="assets/js/vendor/jquery.slicknav.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup-1.1.0.min.js"></script>
@@ -253,25 +276,30 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        const elements = document.getElementsByClassName("donation-frequency");
+        initSelection("donation-frequency");
+        initSelection("donation-amount");
 
-        for (let i = 0; i < elements.length; i++) {
-            const element = elements[i];
+        function initSelection(elementName) {
+            function removeActiveClass(elements) {
+                for (let i = 0; i < elements.length; i++) {
+                    const element = elements[i];
 
-            element.addEventListener('click', (event) => {
-                event.preventDefault();
+                    element.classList.remove("active");
+                }
+            }
 
-                removeActiveClass(element.parentElement.getElementsByClassName("donation-frequency"));
+            const elements = document.getElementsByClassName(elementName);
 
-                element.classList.add("active");
-            });
-        }
-
-        function removeActiveClass(elements) {
             for (let i = 0; i < elements.length; i++) {
                 const element = elements[i];
 
-                element.classList.remove("active");
+                element.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    removeActiveClass(element.parentElement.getElementsByClassName(elementName));
+
+                    element.classList.add("active");
+                });
             }
         }
     </script>

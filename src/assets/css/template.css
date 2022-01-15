@@ -2126,6 +2126,7 @@ hr {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #2d2d2d;
 }
 
 @media (min-width: 768px) {
@@ -4125,8 +4126,8 @@ del {
   width: 50%;
   color: #1faf51;
   border: 2px solid #1faf51;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
 }
 
 .donation-frequency label {
@@ -4157,6 +4158,58 @@ del {
 }
 
 .donation-frequency.active * {
+  cursor: default;
+}
+
+.donation-amount {
+  color: #fff;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  color: #1faf51;
+  border: 2px solid #1faf51;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+.donation-amount label {
+  position: relative;
+  padding: 15px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.donation-amount label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.donation-amount.active {
+  color: white;
+  background-color: #1faf51;
+}
+
+.donation-amount.active * {
   cursor: default;
 }
 /*# sourceMappingURL=template.css.map */
