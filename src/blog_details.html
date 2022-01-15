@@ -86,8 +86,8 @@
                             <div class="blog_details">
                                 <h2 id="blog_title"></h2>
                                 <ul class="blog-info-link mt-3 mb-4">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="#"><i class="fa fa-user"></i> <span id="blog_publisher"></span></a></li>
+                                    <li><a href="#"><span id="blog_date"></span></a></li>
                                 </ul>
                                 <div id="blog_description"></div>
                             </div>
@@ -98,7 +98,7 @@
                                 <div class="col-sm-4 text-center my-2 my-sm-0">
                                 </div>
                                 <ul class="social-icons">
-                                    <li><a href="../../sai4ull.html"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
                                     <li><a href="#"><i class="fab fa-behance"></i></a></li>
@@ -346,7 +346,11 @@
             redirectToBlog();
         }
 
-        document.getElementById("blog_image")
+        document.getElementById("blog_image").src = "http://localhost/savetheforest/src/xml/blog/images/" + currentNotice.image;
+        document.getElementById("blog_title").innerHTML = currentNotice.title;
+        document.getElementById("blog_description").innerHTML = currentNotice.description;
+        document.getElementById("blog_publisher").innerHTML = currentNotice.publisher;
+        document.getElementById("blog_date").innerHTML = currentNotice.date;
 
         function getNoticeById(id) {
             let blogNotices = blogContent.catalog.notice;

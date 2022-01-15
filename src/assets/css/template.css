@@ -1086,7 +1086,7 @@ hr {
 }
 
 .slider-2 {
-  background-image: url(../img/background/background.png);
+  background-image: url(../img/background/burning_forest2.jpg);
 }
 
 .slider-3 {
@@ -1094,15 +1094,15 @@ hr {
 }
 
 .slider-4 {
-  background-image: url(../img/background/banner.jpg);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-5 {
-  background-image: url(../img/background/banner2.png);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-6 {
-  background-image: url(../img/background/background2.jpg);
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-7 {
@@ -1110,8 +1110,7 @@ hr {
 }
 
 .slider-8 {
-  background-image: url(../img/background/background3.jpg);
-  background-position: inherit;
+  background-image: url(../img/background/winter_forest1.jpg);
 }
 
 .slider-9 {
@@ -3299,14 +3298,10 @@ del {
   border-left: 2px solid #1f2b7b;
 }
 
-.progress-table-wrap {
-  overflow-x: scroll;
-}
-
 .progress-table {
   background: #f9f9ff;
   padding: 15px 0 30px 0;
-  min-width: 800px;
+  width: 100%;
 }
 
 .progress-table th {
@@ -3316,16 +3311,16 @@ del {
 }
 
 .progress-table .serial {
-  width: 11.83%;
+  width: 13%;
   padding-left: 30px;
 }
 
 .progress-table .country {
-  width: 28.07%;
+  width: 50%;
 }
 
 .progress-table .visit {
-  width: 19.74%;
+  width: 37%;
 }
 
 .progress-table .percentage {
@@ -3371,6 +3366,7 @@ del {
 
 .progress-table .table-row .country img {
   margin-right: 15px;
+  height: 30px;
 }
 
 .progress-table .table-row .percentage .progress {

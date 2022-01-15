@@ -2869,26 +2869,22 @@ del {
     border-left: 2px solid #1f2b7b;
 }
 
-.progress-table-wrap {
-    overflow-x: scroll;
-}
-
 .progress-table {
     background: #f9f9ff;
     padding: 15px 0 30px 0;
-    min-width: 800px;
+    width: 100%;
     th {
         display: flex;
     }
     .serial {
-        width: 11.83%;
+        width: 13%;
         padding-left: 30px;
     }
     .country {
-        width: 28.07%;
+        width: 50%;
     }
     .visit {
-        width: 19.74%;
+        width: 37%;
     }
     .percentage {
         width: 40.36%;
@@ -2919,6 +2915,7 @@ del {
         }
         .country img {
             margin-right: 15px;
+            height: 30px;
         }
         .percentage .progress {
             width: 80%;
