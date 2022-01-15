@@ -62,10 +62,28 @@
 
     <main>
 
+        <style>
+            .slider-bg1 video {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: none;
+                z-index: 0;
+            }
+            
+            .slider-bg1 .container {
+                z-index: 1;
+                position: relative;
+            }
+        </style>
+
         <div class="slider-area position-relative">
             <div class="slider-active dot-style">
 
-                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
+                <div class="single-slider slider-height slider-bg1 d-flex align-items-center">
+                    <video class="hero-overly" autoplay="" muted="" loop="">
+                        <source src="assets/vid/forest.mp4" type="video/mp4">
+                    </video>
                     <div class="container">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
@@ -73,14 +91,14 @@
                                     <h1 data-animation="fadeInUp" data-delay=".2s"></h1>
                                     <p data-animation="fadeInUp" data-delay=".4s">A world where forests are sustainably managed for climate and humanity</p>
                                     <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay=".8s">Active
-                                        Cases</a>
+                                            Cases</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="single-slider hero-overly01  slider-height slider-bg2 d-flex align-items-center">
+                <div class="single-slider hero-overly01 slider-height slider-bg2 d-flex align-items-center">
                     <div class="container">
                         <div class="row justify-content-end">
                             <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10">
@@ -311,9 +329,9 @@
                                 <h2>Who we are?</h2>
                             </div>
                             <div class="support-caption">
-                                <p class="mb-10">We believe that sustainable forests are critical to our collective future. Save the forest is a sustainability leader through our work 
-                                    in standards, conservation, community, and education.</p>
-                                <p class="pera-top">As an independent, non-profit organization, we collaborate with our diverse network to provide solutions to local and global sustainability challenges. Save the forest works with the forest sector, conservation groups, resource professionals.</p>
+                                <p class="mb-10">We believe that sustainable forests are critical to our collective future. Save the forest is a sustainability leader through our work in standards, conservation, community, and education.</p>
+                                <p class="pera-top">As an independent, non-profit organization, we collaborate with our diverse network to provide solutions to local and global sustainability challenges. Save the forest works with the forest sector, conservation groups,
+                                    resource professionals.</p>
                                 <a href="about.html" class="btn about-btn">Learn More</a>
                             </div>
                         </div>
@@ -442,9 +460,8 @@
                             <div class="emargency-cap">
                                 <h5><a href="#">They need your help</a></h5>
                                 <p>How much does humanity need to solve climate change?</p>
-                                <p class="emargenc-cap">The world needs to stop deforestation and restore the equivalent of an area the size of India by 2030 if we want 
-                                    a chance to stay below a 2°C temperature increase. More than 2 billion hectares of land are degraded and have been identified as having potential 
-                                    for forest restoration.</p>
+                                <p class="emargenc-cap">The world needs to stop deforestation and restore the equivalent of an area the size of India by 2030 if we want a chance to stay below a 2°C temperature increase. More than 2 billion hectares of land are degraded and have
+                                    been identified as having potential for forest restoration.</p>
                                 <a href="#" class="btn loan-btn">Donate in a Case</a>
                             </div>
                         </div>
