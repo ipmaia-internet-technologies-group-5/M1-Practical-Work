@@ -354,13 +354,13 @@
             }
 
             categories.forEach((quantity, categoryName) => {
-                        const htmlElement = `<li>
+                        const htmlElement = htmlToElement(`<li>
                                 <a href="blog.html?category=${categoryName}" class="d-flex">
                                     <p>${categoryName} ${quantity == 0 ? "" : `(${quantity})`}</p>
                                 </a>
-                            </li>`;
+                            </li>`);
 
-                categoriesElement.insertAdjacentHTML("afterbegin", htmlElement);
+                categoriesElement.appendChild(htmlElement);
             });
         }
     </script>

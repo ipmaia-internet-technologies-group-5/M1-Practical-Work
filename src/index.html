@@ -323,7 +323,6 @@
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
                                 <div class="single-footer-caption mb-20">
-
                                     <div class="footer-logo mb-35">
                                         <a href="index.html"><img src="assets/img/logo/logo2.png" alt="" width="190"></a>
                                     </div>
@@ -457,7 +456,7 @@
 
                 const progressPercentage = parseInt((project.raised / project.goal) * 100);
 
-                htmlElement = `<div class="col-lg-4 col-md-6 col-sm-6">
+                const htmlElement = htmlElement(`<div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="properties pb-30">
                         <div class="properties-card">
                             <div class="properties-img">
@@ -495,9 +494,9 @@
                             </div>
                         </div>
                     </div>
-                </div>`;
+                </div>`);
 
-                projectsElement.insertAdjacentHTML("afterbegin", htmlElement);
+                projectsElement.appendChild(htmlElement);
 
                 $("#bar" + project.id).barfiller();
             }

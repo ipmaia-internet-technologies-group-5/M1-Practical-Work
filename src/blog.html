@@ -269,7 +269,7 @@
             function compareDates(a, b) {
                 if (a == b) return 0;
 
-                return convertToDate(b.date) > convertToDate(a.date) ? -1 : 1;
+                return convertToDate(a.date) > convertToDate(b.date) ? -1 : 1;
             }
 
             let notices = blogContent.catalog.notice;
@@ -285,7 +285,9 @@
             const catalogElement = document.getElementById("blog-catalog");
 
             // Removing all the elements from the catalog element before adding new ones
-            catalogElement.clear();
+            while (catalogElement.lastChild) {
+                catalogElement.removeChild(catalogElement.lastChild);
+            }
 
             for (var i = (currentPage - 1) * maxItemsPerPage; i < (currentPage) * maxItemsPerPage; i++) {
                 if (i >= blogNotices.length) continue;
@@ -299,7 +301,7 @@
                     wrappedDescription = shortDescription.substring(0, shortDescription.lastIndexOf(' ')) + "...";
                 }
 
-                const htmlElement = `<article class="blog_item">
+                const htmlElement = htmlToElement(`<article class="blog_item">
                                     <div class="blog_item_img">
                                         <img class="card-img rounded-0" src="xml/blog/images/${notice.image}" alt="">
                                         <a href="blog_details.html?blog_id=${notice.id}" class="blog_item_date">
@@ -317,9 +319,9 @@
                                             <li><a><i class="fa fa-calendar"></i>${notice.date}</a></li>
                                         </ul>
                                     </div>
-                                </article>`;
+                                </article>`);
 
-                catalogElement.insertAdjacentHTML("afterbegin", htmlElement);
+                catalogElement.appendChild(htmlElement);
             }
         }
 
@@ -361,7 +363,9 @@
 
             const paginationElement = document.getElementById("blog-pagination");
 
-            paginationElement.clear();
+            while (paginationElement.lastChild) {
+                paginationElement.removeChild(paginationElement.lastChild);
+            }
 
             const previousElement = htmlToElement(`<li class="page-item">
                                         <a href="#" class="page-link" aria-label="Previous">
