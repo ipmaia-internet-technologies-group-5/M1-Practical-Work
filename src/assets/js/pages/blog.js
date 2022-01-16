@@ -79,7 +79,7 @@ function prepareCatalogNotices() {
                                     </div>
                                     <div class="blog_details">
                                         <a class="d-inline-block" href="blog_details.html?blog_id=${notice.id}">
-                                            <h2 class="blog-head" style="color: #2d2d2d;">${notice.title}</h2>
+                                            <h2 class="blog-head">${notice.title}</h2>
                                         </a>
                                         <p>${wrappedDescription}</p>
                                         <ul class="blog-info-link">
