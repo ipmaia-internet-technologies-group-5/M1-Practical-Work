@@ -26,16 +26,86 @@
             <br>
             <h3 class="mt-30 mb-30">The 10 countries where primary forests were most lost in 2020</h3>
             <ol class="ordered-list">
-                <li><span>Brasil: 1.700.000</span></li>
-                <li><span>RDC: 500.000</span></li>
+                <li><span>Brasil: 1.700.000</span>
+                  <ol class="ordered-list-alpha">
+                    <li>São Paulo</li>
+                    <li>Rio de Janeiro</li>
+                    <li>Belo Horizonte</li>
+                    <li>Brasília</li>
+                  </ol>
+                </li>
+                <li><span>RDC: 500.000</span>
+                  <ol class="ordered-list-alpha">
+                    <li>Goma</li>
+                    <li>Kinshasa</li>
+                    <li>Bukavu</li>
+                    <li>Kisangani</li>
+                  </ol>
+                </li>
                 <li><span>Bolivia: 300.000</span>
-                <li><span>Indonésia: 300.000</span></li>
-                <li><span>Peru:198.000</span></li>
-                <li><span>Colombia: 180.000</span></li>
-                <li><span>Cameroon: 150.000</span></li>
-                <li><span>Laos: 145.000</span></li>
-                <li><span>Malasia: 144.000</span></li>
-                <li><span>Mexico: 130.000</span></li>
+                  <ol class="ordered-list-alpha">
+                    <li>La Paz</li>
+                    <li>Sucre</li>
+                    <li>Potosí</li>
+                    <li>Oruro</li>
+                  </ol>
+                </li>
+                <li><span>Indonésia: 300.000</span>
+                  <ol class="ordered-list-alpha">
+                    <li>Jacarta</li>
+                    <li>Bogor</li>
+                    <li>Bandung</li>
+                    <li>Mataram</li>
+                  </ol>
+                </li>
+                <li><span>Peru:198.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Lima</li>
+                      <li>Cuscu</li>
+                      <li>Nazca</li>
+                      <li>Huaraz</li>
+                    </ol>
+                  </li>
+                  <li><span>Colombia: 180.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Bogotá</li>
+                      <li>Medelín</li>
+                      <li>Cali</li>
+                      <li>Santa Marta</li>
+                    </ol>
+                  </li>
+                  <li><span>Cameroon: 150.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Yaoundé</li>
+                      <li>Douala</li>
+                      <li>Bamenda</li>
+                      <li>Garoua</li>
+                    </ol>
+                  </li>
+                  <li><span>Laos: 145.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Vienciana</li>
+                      <li>Vang Vieng</li>
+                      <li>Muang Xay</li>
+                      <li>Palxe</li>
+                    </ol>
+                  </li>
+                  <li><span>Malasia: 144.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Malaca</li>
+                      <li>Ipo</li>
+                      <li>Kuala Lumpur</li>
+                      <li>Johor Bahru</li>
+                    </ol>
+                  </li>
+                  <li><span>Mexico: 130.000</span>
+                    <ol class="ordered-list-alpha">
+                      <li>Cancún</li>
+                      <li>Tijuana</li>
+                      <li>Puebla</li>
+                      <li>Tulum</li>
+                    </ol>
+                  </li>
             </ol>
             <br>
             As in previous years, deforestation for the opening of areas for commodity production was the main cause of loss of tree cover (in primary and secondary forests) in Latin America and Southeast Asia, 
@@ -309,7 +379,7 @@
             <br>
             I was looking at two species for my PhD: the Scarlet Macaw (Ara macao) and the Red-and-green Macaw (Ara chloropterus).
             <figure>
-                <img src="xml/blog/images/news5/newsmacaw.jpg" alt="Macaw" style="width:100%">
+                <img class="w-100" src="xml/blog/images/news5/newsmacaw.jpg" alt="Macaw">
                 <figcaption class="font-italic">Macaws have a large brain compared to their body size. Photo by Wildlife Messengers.</figcaption>
             </figure>
             <br>
@@ -342,7 +412,7 @@
             <br>
             <br>
             <figure>
-                <img src="xml/blog/images/news5/newsriver.jpg" alt="Tambopata River" style="width:100%">
+                <img class="w-100" src="xml/blog/images/news5/newsriver.jpg" alt="Tambopata River">
                 <figcaption class="font-italic">The water level of the Tambopata River can fluctuate hour by hour, making it difficult to navigate. Photo by Wildlife Messengers.</figcaption>
             </figure>
             <br>
