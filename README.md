@@ -1,6 +1,8 @@
 # My work assignment Title
 
-Repository to host the project developed for 'some class', a fisrt year subject at SOMESCHOOL. Developed by Group ALPHA : [@MarcoOliveira](https://github.com/marcoamarooliveira), [add others].
+Repository to host the project developed for '
+Internet Technologies', a fisrt year subject at IPMAIA Higher Institute. Developed by Group 5 : [@DavidFerreira66](https://github.com/DavidFerreiraa66), [@Splitrox](https://github.com/Splitrox)
+
 
 ## Short theme description
 
@@ -19,26 +21,30 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 
 ## Technologies
 
-_Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies._
-* XML
-* HTML5 + CSS3
-* Javascript
-* PHP
-* nodeJS
-* _Any other?_
+The following technologies were used for the development of this project:
+
+* [XML](https://www.w3schools.com/xml/xml_whatis.asp)
+* [HTML5](https://www.techradar.com/news/internet/web/html5-what-is-it-1047393) + [CSS3](https://www.techradar.com/news/internet/web/html5-what-is-it-1047393)
+* [Javascript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 ### Frameworks and Libraries
 
-_Did you use any aditional libraries? Describe them here._
-* Docker
-* Multipass
-* NodeJS
-* JQuery
-* Laravel
-* Bootstrap
+The following frameworks and libraries were used for the development of this project:
+
+* [CounterUp 2.0.0](https://github.com/bfintal/Counter-Up2)
+* [JQuery 3.5.1](https://www.w3schools.com/jquery/jquery_intro.asp)
+* [JQuery Barfiller 1.0.1](https://github.com/9bitStudios/barfiller)
+* [JQuery Form 4.3.0](https://malsup.com/jquery/form/)
+* [JQuery Magnific Popup 1.1.0](https://malsup.com/jquery/form/)
+* [JQuery Nice Select 1.0](https://jqueryniceselect.hernansartorio.com)
+* [JQuery Slicknav 1.0.10](https://computerwolf.github.io/SlickNav/)
+* [JQuery Validate 1.11.1](https://jqueryvalidation.org)
+* [Popper Js](https://popper.js.org)
+* [Slick Js](https://kenwheeler.github.io/slick/)
+* [Bootstrap](https://www.w3schools.com/whatis/whatis_bootstrap.asp)
+* [SCSS](https://sass-lang.com)
 
 ## Report
-_Please add at least on section (a file) per Chapter. But you can add more._
 
 ### Project presentation
 * Chapter 1: [Project presentation](doc/c1.md)
@@ -46,9 +52,14 @@ _Please add at least on section (a file) per Chapter. But you can add more._
 * Chapter 2: [User Interface Prototype and Sitemap](doc/c2.md)
 ### Product
 * Chapter 3: [Product](doc/c3.md)
+
+### Discussion
+* Chapter 4: [Discussion](doc/c4.md)
+
 ### Presentation
-* Chapter 4: [Presentation](doc/c4.md)
+* Chapter 5: [Presentation](doc/c5.md)
 
 ## Team
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+* David Ferreira, A036786 [@DavidFerreira66](https://github.com/DavidFerreiraa66)
+* Diogo Vaz, A036815 [@Splitrox](https://github.com/Splitrox)
+
