@@ -118,3 +118,32 @@ _Mark_ example on "blog.xml"_
 
 ![mark](images/mark_example2.png)  
 _Mark example on "blog_details.html"_
+
+width - The attribute specifies the width of the element, in pixels.
+
+```css
+.slider-1 {
+    video {
+        width: 100%;
+        height: 100%;
+        ...
+    }
+}
+```
+
+height - The attribute specifies the height of the input element.
+
+```css
+.hero-overly1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    ...
+}
+```
+
+blockquote - The tag specifies a section that is quoted from another source.
+
+```html
+  <blockquote class="generic-blockquote"> “In 2014 I was there for tourism, and the mining was not evident. But last February, once you pass some of the main towns and find the road to Brazil, it’s shocking, it’s all over,”</blockquote>
+```
