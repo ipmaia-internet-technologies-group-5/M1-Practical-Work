@@ -1,7 +1,7 @@
 // Creating a XML Obj Parser instance
 const xotree = new XML.ObjTree();
 // Converting a blog.xml from xml to js object
-const projectsContent = xotree.parseXML(read_from_file_sync("http://localhost/savetheforest/src/xml/projects/projects.xml"));
+const projectsContent = xotree.parseXML(read_from_file_sync("xml/projects/projects.xml"));
 
 fetchProjects();
 
