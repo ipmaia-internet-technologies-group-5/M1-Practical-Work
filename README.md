@@ -1,4 +1,4 @@
-# My work assignment Title
+# Save The Forest
 
 Repository to host the project developed for '
 Internet Technologies', a fisrt year subject at IPMAIA Higher Institute. Developed by Group 5 : [@DavidFerreira66](https://github.com/DavidFerreiraa66), [@Splitrox](https://github.com/Splitrox)
