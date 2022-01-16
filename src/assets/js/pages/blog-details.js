@@ -1,11 +1,11 @@
 // Creating a XML Obj Parser instance
 const xotree = new XML.ObjTree();
 // Converting a blog.xml from xml to js object
-const blogContent = xotree.parseXML(read_from_file_sync("http://localhost/savetheforest/src/xml/blog/blog.xml "));
+const blogContent = xotree.parseXML(read_from_file_sync("xml/blog/blog.xml "));
 
 const blogId = findGetParameter("blog_id");
 if (blogId == null) {
-    location.href = 'http://localhost/savetheforest/src/blog.html';
+    location.href = 'blog.html';
     redirectToBlog();
 }
 
@@ -15,7 +15,7 @@ if (currentNotice == null) {
     redirectToBlog();
 }
 
-document.getElementById("blog_image").src = "http://localhost/savetheforest/src/xml/blog/images/" + currentNotice.image;
+document.getElementById("blog_image").src = "xml/blog/images/" + currentNotice.image;
 document.getElementById("blog_title").innerHTML = currentNotice.title;
 document.getElementById("blog_description").innerHTML = currentNotice.description;
 document.getElementById("blog_publisher").innerHTML = currentNotice.publisher;
@@ -37,7 +37,7 @@ function getNoticeById(id) {
 }
 
 function redirectToBlog() {
-    location.href = 'http://localhost/savetheforest/src/blog.html';
+    location.href = 'blog.html';
 }
 
 function prepareCategories() {
@@ -97,7 +97,7 @@ function prepareCategories() {
                 const notice = newestNotices[i];
 
                 const htmlElement = htmlToElement(`<div class="media post_item">
-                                    <img src="http://localhost/savetheforest/src/xml/blog/images/${notice.image}" alt="post">
+                                    <img src="xml/blog/images/${notice.image}" alt="post">
                                     <div class="media-body">
                                         <a href="?blog_id=${notice.id}">
                                             <h3>${notice.title}</h3>
