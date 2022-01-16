@@ -372,5 +372,19 @@
         e.preventDefault();
     });
 
+    /* Easter Egg */
+    const easterEggElement = document.getElementById("easter_egg");
+
+    easterEggElement.addEventListener("click", function() {
+        easterEggElement.innerHTML = "";
+
+        const img = document.createElement("img");
+
+        img.width = 100;
+        img.src = "assets/img/easter-egg.png";
+
+        easterEggElement.appendChild(img);
+    });
+
 
 })(jQuery);
