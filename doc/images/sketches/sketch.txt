@@ -1,7 +1,8 @@
+Deixamos como base do modelo para o site um header, um banner e um footer para cada página do trabalho.
+
 index.html
 
-Deixamos como base do modelo para o site um header, um banner e um footer para cada página do trabalho.
-No index.html a página está divida em várias secções, sendo uma delas o slider contendo caixas de texto e três botões. Cada botão direcionado para uma página especifica.
+No index.html a página está dividida em várias secções, sendo uma delas o slider contendo caixas de texto e três botões. Cada botão direciona para uma página especifica.
 Temos uma parte sobre os projetos que a nossa organização neste momento está a hospedar. Contendo diversas imagens, tanto como texto e botões direcionados para a página de 
 "donations.html". Uma secção com uma breve introdução de quem somos nós (organização) contendo um botão para acessar a página "about_us.html" para adquirir mais conhecimento sobre 
 a mesma. Exibimos dados sobre projetos que se encontram ativos, o número de pessoas que apoiaram pelo menos um projeto, como os projetos feitos por ano e por 
@@ -36,5 +37,5 @@ o número de telefone e onde a sede está localizada.
 
 donations.html
 
-E por fim, temos a página de doações ond eestá temporariamente indisponível devido a trabalhos com a página. Temso um formulário onde apresenta o tipo de pagamento que o utilizador deseja
-escolher bem como a quantia estabelecida. não esquecendo do nome e do email.
+E por fim, temos a página de doações onde o utilizador facilmente consegue escolher uma quantia para doar a nossa organização, no entanto esta não está disponivel já que não era algo proposto pelo professor. Temos um formulário onde apresenta o tipo de pagamento que o utilizador deseja
+doar bem como a quantia estabelecida juntamente com um campo para o nome e para o email.
