@@ -4,9 +4,9 @@ Repository to host the project developed for '
 Internet Technologies', a fisrt year subject at IPMAIA Higher Institute. Developed by Group 5 : [@DavidFerreira66](https://github.com/DavidFerreiraa66), [@Splitrox](https://github.com/Splitrox)
 
 
-## Short theme description
+## General Description
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
+This project aims at a summary description of all the activities that were developed in the works proposed by Professor Marco Amaro Oliveira of the IPMAIA Higher Institute.
 
 ## Repository organization
 
