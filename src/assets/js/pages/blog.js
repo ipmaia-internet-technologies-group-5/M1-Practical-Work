@@ -1,7 +1,7 @@
 // Creating a XML Obj Parser instance
 const xotree = new XML.ObjTree();
 // Converting a blog.xml from xml to js object
-const blogContent = xotree.parseXML(read_from_file_sync("src/xml/blog/blog.xml"));
+const blogContent = xotree.parseXML(read_from_file_sync("xml/blog/blog.xml"));
 
 let currentCategory = findGetParameter("category");
 if (currentCategory != null && currentCategory.toLowerCase() == "all") {
