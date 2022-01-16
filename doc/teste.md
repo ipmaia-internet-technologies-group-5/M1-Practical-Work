@@ -34,7 +34,7 @@ adress - The tag defines the contact information for the author/owner of a docum
 _Adress example_
 
 ![address](images/address_example2.png)  
-_Address example on "contact_us.hmtl"_
+_Address example on "contact_us.html"_
 
 
 header - The element represents a container for introductory content or a set of navigational links.
@@ -43,7 +43,7 @@ header - The element represents a container for introductory content or a set of
 _Header example_
 
 ![header](images/header_example2.png)  
-_Header example on "index.hmtl"_
+_Header example on "index.html"_
 
 footer - The tag defines a footer for a document or section.
 
@@ -51,7 +51,7 @@ footer - The tag defines a footer for a document or section.
 _Footer example_
 
 ![footer](images/footer_example2.png)  
-_Footer example on "index.hmtl"_
+_Footer example on "index.html"_
 
 figure - The tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
 
@@ -102,10 +102,19 @@ figcaption -  The tag defines a caption for a figure element.
 ![figcaption](images/img_example1.png)  
 _Figcaption example on "blog.xml"_
 
-strong - The tag is used to define text with strong importance. The content inside is typically displayed in bold.
+strong - The tag is used to define text with strong importance. The content inside is typically displayed in bold. In this program the strong is being used on the "blog.xml" page as this file will be rendered on the respective news page.
 
 ![strong](images/strong_example1.png)  
 _Strong example on "blog.xml"_
 
+![strong](images/strong_example2.png)  
+_Strong example on "blog_details.html"_
 
-mark - 
+
+mark - The tag defines text that should be marked or highlighted.
+
+![mark](images/mark_example1.png)  
+_Mark_ example on "blog.xml"_
+
+![mark](images/mark_example2.png)  
+_Mark example on "blog_details.html"_
