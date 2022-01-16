@@ -1,4 +1,4 @@
-# My work assignment Title
+# Save The Forest
 
 Repository to host the project developed for '
 Internet Technologies', a fisrt year subject at IPMAIA Higher Institute. Developed by Group 5 : [@DavidFerreira66](https://github.com/DavidFerreiraa66), [@Splitrox](https://github.com/Splitrox)
@@ -16,8 +16,7 @@ _Please help reader navigate around describing how the repository is organized b
 
 ## Gallery
 
-_Please provide a galery of the final result, with small images_
-A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
+Click [here](doc/gallery/g1.md) to be redirected to the gallery.
 
 ## Technologies
 
