@@ -1,41 +1,42 @@
-Deixamos como base do modelo para o site um header, um banner e um footer para cada página do trabalho.
+We leave as the basis of the template for the site a header, a banner and a footer for each page of the work.
 
 index.html
 
-No index.html a página está dividida em várias secções, sendo uma delas o slider contendo caixas de texto e três botões. Cada botão direciona para uma página especifica.
-Temos uma parte sobre os projetos que a nossa organização neste momento está a hospedar. Contendo diversas imagens, tanto como texto e botões direcionados para a página de 
-"donations.html". Uma secção com uma breve introdução de quem somos nós (organização) contendo um botão para acessar a página "about_us.html" para adquirir mais conhecimento sobre 
-a mesma. Exibimos dados sobre projetos que se encontram ativos, o número de pessoas que apoiaram pelo menos um projeto, como os projetos feitos por ano e por 
-fim pessoas que foram ajudadas através dos nossos projetos. Exibimos a nossa meta como também alguns valores nossos. A próxima secção contém uma caixa de texto e um botão que 
-irá-nos levar até á página de "donations.html". E por fim temos a secção de contacto que inclui um botão para acessar a página de contactos ("contact_us.html").
+In index.html page is divided into several sections, one of which is the slider containing text boxes and three buttons. Each button is directed to a specific page.
+We have a part about the projects that our organization is currently hosting. Containing several images, as text boxes and buttons directed to the page of "donations.html".
+A section with a brief introduction to who we are as organization containing a button to access the "about_us.html" page to gain more knowledge about us. We display data about 
+projects that are active, the number of people who supported at least one project, such as projects made per year and people who have been helped through our projects. We display 
+our goal as well as some of our values. The next section contains a text box and a button that will take us to the "donations.html" page. And finally we have the contact section 
+that includes a button to access the contact page ("contact_us.html").
 
 about_us.html
 
-Esta página está dividida em 5 secções. A primeira fala-nos sobre quem somos como organização contendo uma imagem e uma caixa de texto. Temos alguns dados exibidos sobre os projetos
-como pessoas que aderiram aos projetos. Temos a secção onde demonstramos a nossa meta e os nossos valores. Temos uma secção a falar sobre a nossa equipa contendo uma imagem e caixa de texto.
-E por fim a secção de contacto contendo imagens, caixa de tecto e um botão que nos leva até à página de "contact_us.html" caso o utilizador pretenda estabeler algum contatco com a empresa.
+This page is divided into 5 sections. The first tells us about who we are as an organization containing an image and a text box. We represent some data displayed about the projects 
+like people who joined the projects. We have a section where we demonstrate our goal and our values. Clearly we have section talking about our team containing an image and text box. 
+And finally the contact section containing images, text box and a button that takes us to the "contact_us.html" page if the user wishes to establish any contact with the company.
 
 projects.html
 
-Na página "projects.html" exibimos então os nossos projetos que estão ativos neste momento contendo, imagens, caixa de texto e botões que nos direcionam para a página "donations.html"index.html
-E por fim, uma outra secção que exibe uma foto e contém uma caixa de texto como um botão para a página das doações.
+On the "projects.html" page we then display our projects that are currently active containing, images, text box and buttons that direct us to the page "donations.html". And finally, 
+another section that displays a image and contains a text box and a button for the donations page.
 
 blog.html
 
-Está aqui presente algumas notícias como questionários. Temos uma secção onde as notícias estão divididas por categorias, como um ramo para inserir o email se pretender receber as notícias via email.
-Está presente uma sistema de paginação para limitar o número de notícias por página. Ao clicar no título de uma notícias conseguirá ler qualquer relato. 
+Here's some news. We have a section where the news is divided by categories, as well as a place to enter the email if you want to receive the news by email (Note: This section 
+it was not proposed by the professor, so the form information was not processed). A paging system is present to limit the number of news per page. By 
+clicking on the title of a news story, you can read any report. 
 
 blog_details.html
 
-Ao clickar num título de uma notícia esta página irá ser exibida. Aqui o conteúdo da notícia é mostrado na forma completa inclui também as secções de categoria bem como de newsletter adicionado ainda 
-mais uma secção mostrando os posts recentes.
+When you click on a title this page will be displayed. Here the content of the news is shown in full form also includes the category sections as well as newsletter adding even more 
+a section showing the recent posts.
 
 contact_us.html
 
-Na página de contacto está presente um formulário, que atualmente não está disponível, para contactar a organização. Está também aqui presente o principal email da empresa, bem como 
-o número de telefone e onde a sede está localizada.
+A form is present on the contact page, which is currently not available as it was not proposed by the professor, so the form information was not processed. Also present is the 
+company's email, as well as the phone number and where the headquarters is located.
 
 donations.html
 
-E por fim, temos a página de doações onde o utilizador facilmente consegue escolher uma quantia para doar a nossa organização, no entanto esta não está disponivel já que não era algo proposto pelo professor. Temos um formulário onde apresenta o tipo de pagamento que o utilizador deseja
-doar bem como a quantia estabelecida juntamente com um campo para o nome e para o email.
+And finally, we have the donations page where the user can easily choose an amount to donate to our organization, however this is not available since it was not something proposed 
+by the teacher. We have a form that displays the type of payment you want to donate as well as the amount established along with a field for the name and email.
