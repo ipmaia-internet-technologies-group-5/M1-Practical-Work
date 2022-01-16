@@ -1,0 +1,40 @@
+index.html
+
+Deixamos como base do modelo para o site um header, um banner e um footer para cada página do trabalho.
+No index.html a página está divida em várias secções, sendo uma delas o slider contendo caixas de texto e três botões. Cada botão direcionado para uma página especifica.
+Temos uma parte sobre os projetos que a nossa organização neste momento está a hospedar. Contendo diversas imagens, tanto como texto e botões direcionados para a página de 
+"donations.html". Uma secção com uma breve introdução de quem somos nós (organização) contendo um botão para acessar a página "about_us.html" para adquirir mais conhecimento sobre 
+a mesma. Exibimos dados sobre projetos que se encontram ativos, o número de pessoas que apoiaram pelo menos um projeto, como os projetos feitos por ano e por 
+fim pessoas que foram ajudadas através dos nossos projetos. Exibimos a nossa meta como também alguns valores nossos. A próxima secção contém uma caixa de texto e um botão que 
+irá-nos levar até á página de "donations.html". E por fim temos a secção de contacto que inclui um botão para acessar a página de contactos ("contact_us.html").
+
+about_us.html
+
+Esta página está dividida em 5 secções. A primeira fala-nos sobre quem somos como organização contendo uma imagem e uma caixa de texto. Temos alguns dados exibidos sobre os projetos
+como pessoas que aderiram aos projetos. Temos a secção onde demonstramos a nossa meta e os nossos valores. Temos uma secção a falar sobre a nossa equipa contendo uma imagem e caixa de texto.
+E por fim a secção de contacto contendo imagens, caixa de tecto e um botão que nos leva até à página de "contact_us.html" caso o utilizador pretenda estabeler algum contatco com a empresa.
+
+projects.html
+
+Na página "projects.html" exibimos então os nossos projetos que estão ativos neste momento contendo, imagens, caixa de texto e botões que nos direcionam para a página "donations.html"index.html
+E por fim, uma outra secção que exibe uma foto e contém uma caixa de texto como um botão para a página das doações.
+
+blog.html
+
+Está aqui presente algumas notícias como questionários. Temos uma secção onde as notícias estão divididas por categorias, como um ramo para inserir o email se pretender receber as notícias via email.
+Está presente uma sistema de paginação para limitar o número de notícias por página. Ao clicar no título de uma notícias conseguirá ler qualquer relato. 
+
+blog_details.html
+
+Ao clickar num título de uma notícia esta página irá ser exibida. Aqui o conteúdo da notícia é mostrado na forma completa inclui também as secções de categoria bem como de newsletter adicionado ainda 
+mais uma secção mostrando os posts recentes.
+
+contact_us.html
+
+Na página de contacto está presente um formulário, que atualmente não está disponível, para contactar a organização. Está também aqui presente o principal email da empresa, bem como 
+o número de telefone e onde a sede está localizada.
+
+donations.html
+
+E por fim, temos a página de doações ond eestá temporariamente indisponível devido a trabalhos com a página. Temso um formulário onde apresenta o tipo de pagamento que o utilizador deseja
+escolher bem como a quantia estabelecida. não esquecendo do nome e do email.
