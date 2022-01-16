@@ -28,7 +28,7 @@ The following technologies were used for the development of this project:
 * [Javascript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 * [XML](https://www.w3schools.com/xml/xml_whatis.asp)
 
-### Frameworks and Libraries
+## Frameworks and Libraries
 
 The following frameworks and libraries were used for the development of this project:
 
@@ -43,7 +43,7 @@ The following frameworks and libraries were used for the development of this pro
 * [Popper 2.4.0](https://popper.js.org)
 * [Slick 1.8.0](https://kenwheeler.github.io/slick/)
 * [Bootstrap](https://getbootstrap.com)
-* [SCSS](https://sass-lang.com)
+* [SASS](https://sass-lang.com)
 
 ## Report
 
