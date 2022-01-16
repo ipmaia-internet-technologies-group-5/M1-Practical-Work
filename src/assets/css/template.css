@@ -561,8 +561,8 @@ hr {
   line-height: 1;
   line-height: 0;
   cursor: pointer;
-  -webkit-transition: color .4s linear;
-  transition: color .4s linear;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
   position: relative;
   z-index: 1;
   border: 0;
@@ -579,10 +579,10 @@ hr {
   background: #2d9551;
   z-index: 1;
   border-radius: 0;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   -webkit-transform-origin: 0 0;
@@ -624,8 +624,8 @@ hr {
   padding-right: 6px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: all .4s ease-out 0s;
-  transition: all .4s ease-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
   font-weight: 600;
 }
 
@@ -680,8 +680,8 @@ hr {
   line-height: 1;
   line-height: 0;
   cursor: pointer;
-  -webkit-transition: color .4s linear;
-  transition: color .4s linear;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
   position: relative;
   z-index: 1;
   border: 0;
@@ -698,10 +698,10 @@ hr {
   background: #1b322b;
   z-index: 1;
   border-radius: 5px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   -webkit-transform-origin: 0 0;
@@ -842,8 +842,8 @@ hr {
   padding: 23px 7px;
   display: block;
   font-size: 16px;
-  -webkit-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
   text-transform: capitalize;
   position: relative;
 }
@@ -2061,8 +2061,8 @@ hr {
 }
 
 .footer-social a i {
-  -webkit-transition: all .4s ease-out 0s;
-  transition: all .4s ease-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
   display: inline-block;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
@@ -2350,8 +2350,8 @@ hr {
 
 .blog_right_sidebar .post_category_widget .cat-list li {
   border-bottom: 1px solid #f0e9ff;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   padding-bottom: 12px;
 }
 
@@ -2416,8 +2416,8 @@ hr {
   padding: 4px 20px;
   margin-bottom: 8px;
   margin-right: 3px;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #888;
   font-size: 13px;
 }
@@ -2427,7 +2427,6 @@ hr {
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
-  -webkit-transition: .5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -3072,7 +3071,7 @@ del {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -3292,7 +3291,7 @@ del {
 }
 
 .genric-btn.disable {
-  color: #222, .3;
+  color: #222, 0.3;
   background: #f9f9ff;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -3606,8 +3605,8 @@ del {
   height: 15px;
   border-radius: 50%;
   background: #1f2b7b;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -3672,8 +3671,8 @@ del {
   height: 15px;
   border-radius: 50%;
   background: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -3728,8 +3727,8 @@ del {
   height: 100%;
   background: transparent;
   border-radius: 8.5px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -3742,8 +3741,8 @@ del {
   height: 15px;
   border-radius: 50%;
   background: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -4020,8 +4019,8 @@ del {
 
 .default-select .nice-select .list .option {
   font-weight: 300;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
   font-size: 12px;
@@ -4069,8 +4068,8 @@ del {
 
 .form-select .nice-select .list .option {
   font-weight: 300;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
   font-size: 12px;
@@ -4129,8 +4128,8 @@ del {
   width: 50%;
   color: #1faf51;
   border: 2px solid #1faf51;
-  -webkit-transition: all .1s ease-out;
-  transition: all .1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .donation-frequency label {
@@ -4181,8 +4180,8 @@ del {
   width: 50%;
   color: #1faf51;
   border: 2px solid #1faf51;
-  -webkit-transition: all .1s ease-out;
-  transition: all .1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .donation-amount label {
@@ -4214,5 +4213,12 @@ del {
 
 .donation-amount.active * {
   cursor: default;
+}
+
+.post_item img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=template.css.map */

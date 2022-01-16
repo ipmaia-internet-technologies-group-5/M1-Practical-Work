@@ -115,42 +115,7 @@
                             </aside>
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title " style="color: #2d2d2d;">Recent Post</h3>
-                                <div class="media post_item">
-                                    <img src="assets/img/post/post_1.jpg " alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                                        </a>
-                                        <p>January 12, 2019</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="assets/img/post/post_2.jpg " alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="assets/img/post/post_3.jpg " alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="assets/img/post/post_4.jpg " alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
+                                <div id="recent_posts"></div>
                             </aside>
                             <aside class="single_sidebar_widget newsletter_widget">
                                 <h4 class="widget_title " style="color: #2d2d2d;">Newsletter</h4>
@@ -316,6 +281,7 @@
         document.getElementById("blog_date").innerHTML = currentNotice.date;
 
         prepareCategories();
+        prepareRecentPosts();
 
         function getNoticeById(id) {
             let blogNotices = blogContent.catalog.notice;
@@ -362,6 +328,45 @@
 
                 categoriesElement.appendChild(htmlElement);
             });
+        }
+
+
+
+        function fetchNewestBlogNotices() {
+            function compareDates(a, b) {
+                if (a == b) return 0;
+
+                return convertToDate(a.date) > convertToDate(b.date) ? -1 : 1;
+            }
+
+            let notices = blogContent.catalog.notice;
+
+            // Making sure that this current notice will not show on the recent posts
+            notices = notices.filter((n) => n.id != currentNotice.id);
+
+            return notices.sort(compareDates).slice(0, 5); // Get only 4 notices
+        }
+
+        function prepareRecentPosts() {
+            const recentPostsElement = document.getElementById("recent_posts");
+
+            const newestNotices = fetchNewestBlogNotices();
+
+            for (let i = 0;i < newestNotices.length; i++) {
+                const notice = newestNotices[i];
+
+                const htmlElement = htmlToElement(`<div class="media post_item">
+                                    <img src="http://localhost/savetheforest/src/xml/blog/images/${notice.image}" alt="post">
+                                    <div class="media-body">
+                                        <a href="?blog_id=${notice.id}">
+                                            <h3>${notice.title}</h3>
+                                        </a>
+                                        <p>${notice.date}</p>
+                                    </div>
+                                </div>`);
+
+                recentPostsElement.appendChild(htmlElement);
+            }
         }
     </script>
 </body>
