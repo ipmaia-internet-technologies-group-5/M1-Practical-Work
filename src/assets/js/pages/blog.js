@@ -120,92 +120,92 @@ function prepareCategories() {
                                          </a>
                                      </li>`;
 
-                categoriesElement.insertAdjacentHTML("afterbegin", htmlElement);
-            });
-        }
+        categoriesElement.insertAdjacentHTML("afterbegin", htmlElement);
+    });
+}
 
-        function preparePagination() {
-            function insertAfter(referenceNode, newNode) {
-                referenceNode.parentNode.insertBefore(newNode, referenceNode.lastSibling);
-            }
+function preparePagination() {
+    function insertAfter(referenceNode, newNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.lastSibling);
+    }
 
-            const paginationElement = document.getElementById("blog-pagination");
+    const paginationElement = document.getElementById("blog-pagination");
 
-            while (paginationElement.lastChild) {
-                paginationElement.removeChild(paginationElement.lastChild);
-            }
+    while (paginationElement.lastChild) {
+        paginationElement.removeChild(paginationElement.lastChild);
+    }
 
-            const previousElement = htmlToElement(`<li class="page-item">
+    const previousElement = htmlToElement(`<li class="page-item">
                                         <a href="#" class="page-link" aria-label="Previous">
                                             <i class="ti-angle-left"></i>
                                         </a>
                                     </li>`);
 
-            previousElement.addEventListener('click', (event) => {
-                event.preventDefault();
+    previousElement.addEventListener('click', (event) => {
+        event.preventDefault();
 
-                setCurrentPage(currentPage + 1);
-                updatePage();
-            });
+        setCurrentPage(currentPage + 1);
+        updatePage();
+    });
 
-            paginationElement.appendChild(previousElement);
+    paginationElement.appendChild(previousElement);
 
-            for (var i = 0; i < maxPages; i++) {
-                const page = i + 1;
+    for (var i = 0; i < maxPages; i++) {
+        const page = i + 1;
 
-                const itemElement = htmlToElement(`<li class="page-item ${page == currentPage ? "active" : ""}">
+        const itemElement = htmlToElement(`<li class="page-item ${page == currentPage ? "active" : ""}">
                                         <a class="page-link" pagination-item="${page}">${page}</a>
                                     </li>`);
 
-                itemElement.addEventListener('click', (event) => {
-                    event.preventDefault();
+        itemElement.addEventListener('click', (event) => {
+            event.preventDefault();
 
-                    handlePaginationClick(event);
-                });
+            handlePaginationClick(event);
+        });
 
-                paginationElement.appendChild(itemElement);
-            }
+        paginationElement.appendChild(itemElement);
+    }
 
-            const nextElement = htmlToElement(`<li class="page-item">
+    const nextElement = htmlToElement(`<li class="page-item">
                                         <a href="#" class="page-link" aria-label="Next">
                                             <i class="ti-angle-right"></i>
                                         </a>
                                     </li>`);
 
-            nextElement.addEventListener('click', (event) => {
-                event.preventDefault();
+    nextElement.addEventListener('click', (event) => {
+        event.preventDefault();
 
-                setCurrentPage(currentPage + 1);
-                updatePage();
-            });
+        setCurrentPage(currentPage + 1);
+        updatePage();
+    });
 
-            paginationElement.appendChild(nextElement);
-        }
+    paginationElement.appendChild(nextElement);
+}
 
-        function handlePaginationClick(event) {
-            // Extracting the attribute from the element
-            const pageAttribute = event.target.getAttribute('pagination-item');
+function handlePaginationClick(event) {
+    // Extracting the attribute from the element
+    const pageAttribute = event.target.getAttribute('pagination-item');
 
-            /* 
-             * Checking if the element actually contains a page attribute 
-             * (If the user clicks on the "li" element instead of clicking on the "a" element) 
-             */
-            if (pageAttribute == null) {
-                return;
-            }
+    /* 
+     * Checking if the element actually contains a page attribute 
+     * (If the user clicks on the "li" element instead of clicking on the "a" element) 
+     */
+    if (pageAttribute == null) {
+        return;
+    }
 
-            if (currentPage == pageAttribute) return;
+    if (currentPage == pageAttribute) return;
 
-            // Updating the current page variable
-            setCurrentPage(pageAttribute);
+    // Updating the current page variable
+    setCurrentPage(pageAttribute);
 
-            // Updating all notices according to the new current page
-            updatePage();
-        }
+    // Updating all notices according to the new current page
+    updatePage();
+}
 
-        function updatePage() {
-            prepareCatalogNotices();
-            preparePagination();
+function updatePage() {
+    prepareCatalogNotices();
+    preparePagination();
 
-            document.getElementById("blog-categories").scrollIntoView();
-        }
+    document.getElementById("blog-categories").scrollIntoView();
+}

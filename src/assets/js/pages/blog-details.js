@@ -1,11 +1,10 @@
 // Creating a XML Obj Parser instance
 const xotree = new XML.ObjTree();
 // Converting a blog.xml from xml to js object
-const blogContent = xotree.parseXML(read_from_file_sync("xml/blog/blog.xml "));
+const blogContent = xotree.parseXML(read_from_file_sync("xml/blog/blog.xml"));
 
 const blogId = findGetParameter("blog_id");
 if (blogId == null) {
-    location.href = 'blog.html';
     redirectToBlog();
 }
 
@@ -67,36 +66,35 @@ function prepareCategories() {
                                 </a>
                             </li>`);
 
-                categoriesElement.appendChild(htmlElement);
-            });
-        }
+        categoriesElement.appendChild(htmlElement);
+    });
+}
 
 
+function fetchNewestBlogNotices() {
+    function compareDates(a, b) {
+        if (a == b) return 0;
 
-        function fetchNewestBlogNotices() {
-            function compareDates(a, b) {
-                if (a == b) return 0;
+        return convertToDate(a.date) > convertToDate(b.date) ? -1 : 1;
+    }
 
-                return convertToDate(a.date) > convertToDate(b.date) ? -1 : 1;
-            }
+    let notices = blogContent.catalog.notice;
 
-            let notices = blogContent.catalog.notice;
+    // Making sure that this current notice will not show on the recent posts
+    notices = notices.filter((n) => n.id != currentNotice.id);
 
-            // Making sure that this current notice will not show on the recent posts
-            notices = notices.filter((n) => n.id != currentNotice.id);
+    return notices.sort(compareDates).slice(0, 4); // Get only 4 notices
+}
 
-            return notices.sort(compareDates).slice(0, 4); // Get only 4 notices
-        }
+function prepareRecentPosts() {
+    const recentPostsElement = document.getElementById("recent_posts");
 
-        function prepareRecentPosts() {
-            const recentPostsElement = document.getElementById("recent_posts");
+    const newestNotices = fetchNewestBlogNotices();
 
-            const newestNotices = fetchNewestBlogNotices();
+    for (let i = 0; i < newestNotices.length; i++) {
+        const notice = newestNotices[i];
 
-            for (let i = 0;i < newestNotices.length; i++) {
-                const notice = newestNotices[i];
-
-                const htmlElement = htmlToElement(`<div class="media post_item">
+        const htmlElement = htmlToElement(`<div class="media post_item">
                                     <img src="xml/blog/images/${notice.image}" alt="post">
                                     <div class="media-body">
                                         <a href="?blog_id=${notice.id}">
@@ -106,6 +104,6 @@ function prepareCategories() {
                                     </div>
                                 </div>`);
 
-                recentPostsElement.appendChild(htmlElement);
-            }
-        }
+        recentPostsElement.appendChild(htmlElement);
+    }
+}
